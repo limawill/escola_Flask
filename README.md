@@ -6,7 +6,6 @@ Este projeto é executado no micro framework Python: Flask e banco de dados SQLi
 
 - Flask==1.1.2
 - dynaconf==3.1.4
-- DateTime==4.3
 
 
 ## Como rodar localmente
