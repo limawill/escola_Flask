@@ -89,7 +89,9 @@ http://127.0.0.1:5000/filtrar/AnoNasc?NASC=2003
 http://127.0.0.1:5000/filtrar/Nota?NOTA=5
 ```
 
+### URL /massa
 
+Foi implementado somente para ter um resultado maior na aplicação dos filtros. Para simulação os dados do usuario tem a sua origem do  arquivo: **MassaDados.json**
 
 ## Estrutura do projeto
 ```sh
