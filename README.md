@@ -43,51 +43,53 @@ Após o flask estar ativo acesse:
 ```sh
 http://127.0.0.1:5000
 ```
-### URL /candidates
+### URL /cadastro
 ```sh
-http://127.0.0.1:5000/candidates
+http://127.0.0.1:5000/cadastro
 ```
-Esta URL é responde a solicitação do **Alfi** a de inclusão de novos usuarios, é verificado pelo CNPJ se o cadastro já existe caso não o mesmo inclui, se já existir é informado no retorno que o usuario já existe. Para simulação os dados do usuario vem do arquivo: **dadosCadastros.json**
+Esta URL é responde a solicitação de inclusão de novos alunos, é verificado pelo CPF se o aluno já existe caso não o mesmo inclu. Caso o aluno já esteja cadastrado retorna a código **404**, caso o mesmo seja incluido na base de dados o retorno é **200**. Para simulação os dados do usuario tem a sua origem do  arquivo: **Cadastro.json**
 
-### URL /candidates/1
+### URL /atualizar
 ```sh
-http://127.0.0.1:5000/candidates/1
+http://127.0.0.1:5000/atualizar
 ```
-Esta URL é responde a solicitação do **Samuca** a de realizar o update dos usuarios que estão na base de dados, atualizando somente os campos:
-- Nome
-- Sobrenome
-- Tipo do contato
-- Telefone
+Esta URL é responde a solicitação para alteração de dados dos alunos, é verificado pelo CPF se o aluno não existe na base de dados retorna a código **404**. Caso o mesmo seja encontrado seus dados são atualizados e o código de retorno é **200**. Para simulação os dados do usuario tem a sua origem do  arquivo: **Altera.json**
 
-A realização da atualização é realizado pela verificação do CNPJ na base. O retorno infoma quantos usuarios foram atualizados com sucesso cadastro. 
-Para simulação os dados dos usuarios vem do arquivo: **dadosAlterados.json**
-
-
-### URL /contacts
+### URL /listar
 ```sh
-http://127.0.0.1:5000/contacts
+http://127.0.0.1:5000/listar
 ```
-Esta URL é responde a uma das solicitações do **Fabricio** a de verificação dos novos canditados (usuarios), automaticamente ele retorna no formato **json** todos os usuarios cadastrados no dia da pesquisa.
-É possivel realizar pesquisa por periodo, basta incluir na URL um endpoint, conforme o exemplo abaixo:
+Esta URL é responde a solicitação para listagem de todos os alunos  cadastrados. A saída dos dados está no formatdo **JSON**
 
+### URL /remover + CPF
 ```sh
-http://127.0.0.1:5000/contacts?numberDays=4
+http://127.0.0.1:5000/remover?CPF=356.520.020-00
 ```
-No exemplo acima a busca será realizada da data atual há 4 dias atrás (Ex: do dia 05/04 até 09/05)
+Esta URL é responde a solicitação para exclusão de um aluno da base de dados. Para realizar a exclusão é necessario informar o CPF do aluno, caso o mesmo não seja informado retorna a mensagem **CPF not found - 404".*** Informando o CPF o sistema faz a busca na base de dados e retorna a código **404** caso não seja encontrado, e o o retorno positivo é **200** 
 
+### URL /filtrar/
 
-### URL /contacts/1
+Foi implementado filtros basicos do Sexo, ano de nascimento, nota e ano letivo do aluno. Para todos os casos é necessario informar o dado que deseja buscar (veja exemplos abaixo). Caso não seja informado retorna o código ***404***. A saída dos dados está no formatdo **JSON**
 
+#### Sexo do Aluno 
 ```sh
-http://127.0.0.1:5000/contacts/1
+http://127.0.0.1:5000/filtrar/sexo?SEXO=Feminino
 ```
-Esta URL é responde a outra solicitação feita pelo **Fabricio** a de verificação na atualização dos dados dos canditados (usuarios), automaticamente ele retorna no formato **json** todos os usuarios que atualizaram seus dados no dia da pesquisa.
-É possivel realizar pesquisa por periodo, basta incluir na URL um endpoint, conforme o exemplo abaixo:
 
+#### Ano de Nascimento 
 ```sh
-http://127.0.0.1:5000/contacts/1?numberDays=4
+http://127.0.0.1:5000/filtrar/AnoNasc?NASC=2003
 ```
-No exemplo acima a busca será realizada da data atual há 4 dias atrás (Ex: do dia 05/04 até 09/05)
+#### Ano letivo (série)
+```sh
+127.0.0.1:5000/filtrar/anoletivo?LETIVO=6
+```
+#### Nota do Aluno 
+```sh
+http://127.0.0.1:5000/filtrar/Nota?NOTA=5
+```
+
+
 
 ## Estrutura do projeto
 ```sh
