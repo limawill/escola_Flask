@@ -1,0 +1,142 @@
+[
+{
+    "cpf": "785.543.668-59",
+    "nome": "Isadora Amanda Sarah das Neves",
+    "sexo": "Feminino",
+    "data_nasc": "08\/07\/2003",
+    "endereco": "Rua São João 808, 411",
+    "complemento": "Apartamento 112",
+    "cep": "04842-490",
+    "anoletivo": "2",
+    "nota": "8",
+    "filiacao": {
+      "mae": "Esther Teresinha",
+      "pai": "Thomas Lucas das Neves"
+    	},
+    "contacts": {
+      "telefone": "(17) 99325-2051",
+      "email": "isadoraamandasarahdasneves@sestito.com.br"
+    }
+},
+
+{
+    "cpf": "331.667.868-99",
+    "nome": "Milena Eliane Galvão",
+    "sexo": "Feminino",
+    "data_nasc": "08\/03\/2003",
+    "endereco": "Rua São João,123",
+    "complemento": "casa 3",
+    "cep": "14740-970",
+    "anoletivo": "8",
+    "nota": "5",
+    "filiacao": {
+      "mae": "Eloá Yasmin",
+      "pai": "Pedro Henrique Juan Sebastião Galvão"
+    	},
+    "contacts": {
+      "telefone": "(17) 98491-6176",
+      "email": "milenaelianegalvao@inductothermgroup.com.br"
+    }
+},
+
+{
+    "cpf": "354.646.368-46",
+    "nome": "Sarah Mariah da Costa",
+    "sexo": "Feminino",
+    "data_nasc": "16\/02\/2003",	
+    "endereco": "Rua Camilo Costa, 98",
+    "complemento": "",
+    "cep": "14740-970",
+    "anoletivo": "6",
+    "nota": "2",
+    "filiacao": {
+      "mae": "Nair Lúcia",
+      "pai": ""
+    	},
+    "contacts": {
+      "telefone": "(17) 2982-2425",
+      "email": "sarahmariahdacosta@acesse.net"
+    }
+},
+
+{
+    "cpf": "194.636.598-03",
+    "nome": "Oliver Severino Rocha",
+    "sexo": "Masculino",
+    "data_nasc": "23\/10\/2000",	
+    "endereco": "Avenida da Independencia, 222",
+    "complemento": "Apartamento 2",
+    "cep": "14740-970",
+    "anoletivo": "6",
+    "nota": "5",
+    "filiacao": {
+      "mae": "Sônia Clarice",
+      "pai": "Márcio Gabriel Rocha"
+    	},
+    "contacts": {
+      "telefone": "(17) 3636-1930",
+      "email": "oliverseverinorocha_@abcautoservice.net"
+    }
+},
+
+{
+    "cpf": "058.957.728-03",
+    "nome": "Manoel Gael Alexandre da Costa",
+    "sexo": "Masculino",
+    "data_nasc": "23\/10\/2000",	
+    "endereco": "Rua parque estrada, 12",
+    "complemento": "",
+    "cep": "14740-970",
+    "anoletivo": "4",
+    "nota": "10",
+    "filiacao": {
+      "mae": "Laís Eloá",
+      "pai": "Giovanni Bruno da Costa"
+    	},
+    "contacts": {
+      "telefone": "(17) 99757-4342",
+      "email": "manoelgaelalexandredacosta-95@powerblade.com.br"
+    }
+},
+
+{
+    "cpf": "484.370.638-84",
+    "nome": "Renan Marcelo Oliver Farias",
+    "sexo": "Masculino",
+    "data_nasc": "06\/11\/2003",	
+    "endereco": "Rua Vicente Leoporasse, 23",
+    "complemento": "",
+    "cep": "13050-030",
+    "anoletivo": "11",
+    "nota": "7",
+    "filiacao": {
+      "mae": "Laís Carla Bianca",
+      "pai": "Julio Gabriel Kevin Farias"
+    	},
+    "contacts": {
+      "telefone": "(19) 98338-9045",
+      "email": "renanmarcelooliverfarias-81@onset.com.br"
+    }
+},
+{
+    "cpf": "710.949.948-04",
+    "nome": "Vinicius Sérgio Ribeiro",
+    "sexo": "Masculino",
+    "data_nasc": "06\/05\/2014",	
+    "endereco": "Rua Carlos Kano, 111",
+    "complemento": "Casa",
+    "cep": "14075-457",
+    "anoletivo": "4",
+    "nota": "6",
+    "filiacao": {
+      "mae": "Isis Ester",
+      "pai": "Carlos Vitor Ribeiro"
+    	},
+    "contacts": {
+      "telefone": "(16) 99273-9653",
+      "email": "viniciussergioribeiro-89@tafeta.com.br"
+    }
+}
+
+]
+

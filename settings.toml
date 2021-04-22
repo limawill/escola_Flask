@@ -1,0 +1,14 @@
+[default]
+sqlInsert = "INSERT INTO alunos (cpf, nome, sexo, data_nasc, endereco, complemento, cep, anoletivo, nota, mae, pai, telefone, email) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)"
+sqlDelete = "DELETE FROM alunos WHERE cpf = ?"
+sqlUpdate = "UPDATE alunos SET nome = ?, sexo= ?, data_nasc= ?, endereco= ?, complemento= ?, cep= ?, anoletivo= ?, nota= ?, mae= ?, pai= ?, telefone= ?, email= ? WHERE cpf= ? "
+slqListAll = "SELECT * FROM alunos ORDER BY nome"
+
+sqlSexo = "SELECT * FROM alunos WHERE sexo= ?"
+sqlNascimento = "SELECT * FROM alunos WHERE data_nasc LIKE ?"
+sqlAnoLetivo = "select * from alunos where anoletivo = ?"
+sqlNotas = "select * from alunos where nota = ?" 
+
+arquivoNovos = "./Dados/Cadastro.json"
+arquivosAlterados = "./Dados/Altera.json"
+arquivoMassa = "./Dados/MassaDados.json"

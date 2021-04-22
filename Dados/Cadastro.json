@@ -1,0 +1,21 @@
+[
+  {
+    "cpf": "356.520.020-00",
+    "nome": "Fabricio Pereira",
+    "sexo": "Masculino",
+    "data_nasc": "08\/07\/2003",
+    "endereco": "Rua Napoleão, 82",
+    "complemento": "Apartamento 112",
+    "cep": "04842-490",
+    "anoletivo": "5",
+    "nota": "8",
+    "filiacao": {
+      "mae": "Maria de Jesus Pereira",
+      "pai": "João Pereira"
+    	},
+    "contacts": {
+      "telefone": "11988412398",
+      "email": "fabricio20155@gmail.com"
+    }
+  } 
+]
